@@ -8,7 +8,7 @@ WORKDIR /root
 # Download the latest version of Clang (official binary) for Ubuntu
 # Extract the archive and add Clang to the PATH
 RUN apt-get update && apt-get install -y \
-  xz-utils apt-utils cscope exuberant-ctags \
+  xz-utils apt-utils cscope exuberant-ctags screen tmux \
   build-essential python3-venv python3-pip \
   curl wget cmake tree automake neovim stow git \
   && sh -c 'curl -x http://192.168.1.100:1088 -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
